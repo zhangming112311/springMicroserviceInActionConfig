@@ -1,0 +1,4 @@
+spring:  cloud:    config:      server:        git:          uri: git@github.com:zhangming112311/config.git          ignoreLocalSshSettings: true          hostKey: someHostKey          hostKeyAlgorithm: ssh-rsa          privateKey: |
+                     -----BEGIN RSA PRIVATE KEY-----
+                     b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW                     QyNTUxOQAAACDtqkPCoVr0MOcB1I00zanFLB74230JAu83DpQb2ONhWwAAAJgkLVvBJC1b                     wQAAAAtzc2gtZWQyNTUxOQAAACDtqkPCoVr0MOcB1I00zanFLB74230JAu83DpQb2ONhWw                     AAAEBOnHXiDqOd0dVUCyIw++LkeUPVwDRyQ8DAGCpNL4fKku2qQ8KhWvQw5wHUjTTNqcUs                     HvjbfQkC7zcOlBvY42FbAAAAEnptNDc0NTc3MDQ4QHFxLmNvbQECAw==
+                     -----END RSA PRIVATE KEY-----

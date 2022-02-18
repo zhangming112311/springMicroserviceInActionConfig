@@ -9,9 +9,13 @@ spring:
       server:
         native:
           search-locations: classpath:/config
-        git:
-          uri: https://github.com/ihuaylupo/config.git
-          searchPaths: licensingservice
+#        git:
+#          uri: https://github.com/ihuaylupo/config.git
+#          searchPaths: licensingservice
 server:
   port: 8071
+#对称加密秘钥至少12个字符以上 
+#export ENCRYPT_KEY=IMSYMMETRIC 这个环境变量也可以，这个需要从相应机器的环境变量中由dockerfile传入 这个key需要放到服务器中 todo 加密最佳实践
+encrypt:
+  key: secretkey
 
